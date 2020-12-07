@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <div>
+                <figure class="brand"></figure>
+                <nav class="menu">
+
+                    <input type="checkbox" id="menuToggle">
+                    <label for="menuToggle" class="menu-icon"><img src="images/dot.png"></label>
+                    <ul>
+                        <li><a href='home.html'>
+                                Home</a>
+                        </li>
+                        <li><a href='home.html'>
+                                Projects</a>
+                        </li>
+                        <!-- <li>
+                            <a href='product.html'>About</a>
+                        </li> -->
+                        <!-- <li>
+                            <a href='#'>Contact</a>
+                        </li> -->
+                        <!-- <li>
+                            <a href='#'>Resume</a>
+                        </li> -->
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+    <!-- <div class="masthead-contents">
+        <div class="masthead">
+            <h1>Hi! I’m Angela. </h1>
+            <p>
+
+                I design fun and useful products.
+
+            </p>
+        </div>
+    </div> -->
+    
+        <div class="masthead-video">
+
+            <video id="video" autoplay loop muted>
+                <source src="./videos/homevideo.mp4" type="video/mp4"  />
+          </video>
+         <div class="masthead-video-title"> 
+             <span>Hi! I'm Angela.</span>
+             <span> I design meaningful products empowered by technology.</span>
+        </div>
+    
+    </div>
+    <div class="masthead-placeholder"></div>
+    <main>
+
+
+        <div class="mainWrapper">
+            <div class="project-covers">
+                <div class="project-item">
+                    <div class="hideImgTitle posrelative">
+                        <img src="images/project1.png" alt="1jpg" class="img-xyz">
+                        <a href="./worksDetails.html" class="hideTitle"><span>Reach.live</span><span>Iterative Design<span></a>
+                        <!-- <a href="#" class="showTitle"><span>Reach.live</span><span>Iterative Design<span></a> -->
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="hideImgTitle posrelative">
+                        <img src="images/project2.png" alt="1jpg" class="img-xyz">
+                        <a href="./treeGift.html" class="hideTitle"><span>Sushi Restaurant</span><span>Wesbite Redesign<span></a>
+                        <!-- <a href="#" class="showTitle"><span>Sushi Restaurant</span><span>Wesbite Redesign<span></a> -->
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="hideImgTitle posrelative">
+                        <img src="images/project3.png" alt="1jpg" class="img-xyz">
+                        <a href="./testing.html" class="hideTitle"><span>Tree Gift App</span><span>Product Designer<span></a>
+                        <!-- <a href="#" class="showTitle"><span>Tree Gift App</span><span>Product Designer<span></a> -->
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="hideImgTitle posrelative">
+                        <img src="images/project4.JPG" alt="1jpg" class="img-xyz">
+                        <a href="./website.html" class="hideTitle"><span>Plant Shop</span><span>A/B Testing<span></a>
+                        <!-- <a href="#" class="showTitle"><span>Tree Gift App</span><span>Product Designer<span></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script>
+    if(document.body.clientWidth>1025){
+        let project = document.querySelector(".project-covers").children
+    console.log(project);
+    [...project].forEach(item=>{
+        item.onmouseover = function(){
+            
+            this.querySelector(".hideTitle").classList.add("show")
+            // this.querySelector(".showTitle").classList.remove("hide")
+        }
+        item.onmouseout = function(){
+            
+            this.querySelector(".hideTitle").classList.remove("show")
+            // this.querySelector(".showTitle").classList.add("hide")
+            
+        }
+       
+    })
+    }
+   
+</script>
+</html>
